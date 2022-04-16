@@ -114,4 +114,12 @@ img {
     color:#000;
     text-align: center;
   }
-
+ .disable {
+  text-decoration: none;
+  border-style: none;
+  font-size: 30px;
+  margin: 0 10px;
+  color: #D3D3D3;
+  cursor: pointer;
+  background-color:#12192c;
+ }

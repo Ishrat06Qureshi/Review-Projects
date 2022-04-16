@@ -54,19 +54,28 @@ const forwardReview = () => {
 	if (counter < REVIEWS_JSON.length - 1) {
 		counter = counter + 1;
 		setReviews(counter);
+		enableButton(backwardButton);
 	} else {
-		forwardButton.disabled = true;
+		disableButton(forwardButton);
 	}
 };
 const backReview = () => {
 	if (counter > 0) {
 		counter = counter - 1;
 		setReviews(counter);
+		enableButton(forwardButton);
 	} else {
-		console.log('counter',counter);
-		backwardButton.disabled = true;
+		disableButton(backwardButton);
 	}
 };
-console.log(forwardButton);
+const enableButton = (buttonReference) => {
+	buttonReference.disabled = false;
+	buttonReference.classList.remove('disable');
+};
+const disableButton = (buttonReference) => {
+	buttonReference.disabled = true;
+	buttonReference.classList.add('disable');
+};
+
 forwardButton.addEventListener('click', forwardReview);
 backwardButton.addEventListener('click', backReview);
