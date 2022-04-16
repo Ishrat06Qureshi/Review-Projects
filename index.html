@@ -11,46 +11,40 @@
 		<link rel="stylesheet" href="./index.css" />
 		<title>Reviews Project</title>
 	</head>
+
 	<body>
-		<body>
-			<main class="main">
-				<section class="container">
-					<div class="title">
-						<h2>Reviews Card</h2>
-						<div class="underline"></div>
+		<main class="main">
+			<section class="container">
+				<div class="title">
+					<h2>Reviews Card</h2>
+					<div class="underline"></div>
+				</div>
+				<article class="review">
+					<div class="img-container">
+						<img src="./assets/profileOne.jpg" alt="" id="person-img" />
 					</div>
-					<article class="review">
-						<div class="img-container">
-							<img
-								src="./assets/profileOne.jpg"
-								alt=""
-								id="person-img"
-							/>
-						</div>
-						<h4 id="author">sara jones</h4>
-						<p id="job">ux designer</p>
-						<p id="info">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-							asperiores debitis incidunt, eius earum ipsam cupiditate libero?
-							Iste, doloremque nihil?
-						</p>
-						<div class="button-container">
-							<button class="prev-btn btn" id="forward-btn">
-								<i class="fas fa-chevron-left"></i>
-							</button>
-							<button class="next-btn btn" id="back-btn">
-								<i class="fas fa-chevron-right"></i>
-							</button>
-						</div>
-					</article>
-					<div class="credit">
-						Made with <span style="color: tomato; font-size: 20px">❤</span> by
-						<a href="https://www.learningrobo.com/">Learning Robo</a>
+					<h4 id="author">sara jones</h4>
+					<p id="job">ux designer</p>
+					<p id="info">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+						asperiores debitis incidunt, eius earum ipsam cupiditate libero?
+						Iste, doloremque nihil?
+					</p>
+					<div class="button-container">
+						<button class="prev-btn btn">
+							<i class="fas fa-chevron-left" id="back-btn"></i>
+						</button>
+						<button class="next-btn btn"  id="forward-btn"  >
+							<i class="fas fa-chevron-right"></i>
+						</button>
 					</div>
-				</section>
-			</main>
-			<script src="script.js"></script>
-		</body>
-		<script src="./script.js"></script>
+				</article>
+				<div class="credit">
+					Made with <span style="color: tomato; font-size: 20px">❤</span> by
+					<a href="https://www.learningrobo.com/">Learning Robo</a>
+				</div>
+			</section>
+		</main>
+		<script src="script.js"></script>
 	</body>
 </html>
